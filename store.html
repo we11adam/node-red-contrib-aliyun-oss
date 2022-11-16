@@ -1,0 +1,54 @@
+<script type="text/javascript">
+  RED.nodes.registerType('Aliyun OSS Store', {
+    category: 'config',
+    defaults: {
+      bucket: {value: '', required: true},
+      endpoint: {value: '', required: true},
+      accessKeyId: {value: '', required: true},
+      accessKeySecret: {value: '', required: true},
+      region: {value: '', required: false},
+    },
+    label: function() {
+      return `${this.bucket}`;
+    }
+  });
+</script>
+
+<script type="text/html" data-template-name="Aliyun OSS Store">
+
+    <div class="form-row">
+        <label for="node-config-input-bucket">
+            <i class="fa fa-bookmark"></i> Bucket
+        </label>
+        <input type="text" id="node-config-input-bucket">
+    </div>
+
+    <div class="form-row">
+        <label for="node-config-input-endpoint">
+            <i class="fa fa-bookmark"></i> Endpoint
+        </label>
+        <input type="text" id="node-config-input-endpoint">
+    </div>
+
+    <div class="form-row">
+        <label for="node-config-input-accessKeyId">
+            <i class="fa fa-bookmark"></i> Access Key ID
+        </label>
+        <input type="text" id="node-config-input-accessKeyId">
+    </div>
+
+    <div class="form-row">
+        <label for="node-config-input-accessKeySecret">
+            <i class="fa fa-bookmark"></i> Access Key Secret
+        </label>
+        <input type="text" id="node-config-input-accessKeySecret">
+    </div>
+
+    <div class="form-row">
+        <label for="node-config-input-region">
+            <i class="fa fa-bookmark"></i> Region
+        </label>
+        <input type="text" id="node-config-input-region">
+    </div>
+
+</script>
