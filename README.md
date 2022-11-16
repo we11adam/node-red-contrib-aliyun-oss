@@ -1,7 +1,7 @@
 # Alibaba Cloud OSS for Node-RED
 
 ## 关于
-用于将文件上传到阿里云 OSS 的 Node-RED 节点
+用于将文件上传到阿里云 OSS 的 Node-RED 节点 
 
 ## 用法
 
@@ -57,3 +57,7 @@ You can setup a store configuration via `Aliyun OSS Upload` node. The configurat
 ```
 
 Upload results will be provided in `msg.payload` for downstream nodes to consume.
+
+
+# License
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
